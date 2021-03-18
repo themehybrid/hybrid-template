@@ -1,8 +1,8 @@
 {
-	"name"        : "justintadlock/hybrid-template",
-	"description" : "Additional theme specific features for the Hybrid Core framework.",
+	"name"        : "themehybrid/hybrid-template",
+	"description" : "Template management system, an add-on for the Hybrid Core framework.",
 	"keywords"    : [ "wordpress" ],
-	"homepage"    : "https://github.com/justintadlock/hybrid-template",
+	"homepage"    : "https://github.com/themehybrid/hybrid-template",
 	"license"     : "GPL-2.0-or-later",
 	"authors"     : [
 		{
@@ -13,8 +13,8 @@
 		}
 	],
 	"support"     : {
-		"issues" : "https://github.com/justintadlock/hybrid-template/issues",
-		"forum"  : "https://themehybrid.com/board/topics"
+		"issues" : "https://github.com/themehybrid/hybrid-template/issues",
+		"forum"  : "https://themehybrid.com/board/forums/hybrid-core"
 	},
 	"autoload"    : {
 		"psr-4" : {
