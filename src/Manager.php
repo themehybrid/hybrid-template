@@ -7,19 +7,19 @@
  *
  * @package   HybridCore
  * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright Copyright (c) 2008 - 2019, Justin Tadlock
+ * @copyright Copyright (c) 2008 - 2021, Justin Tadlock
  * @link      https://themehybrid.com/hybrid-core
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 namespace Hybrid\Template;
 
-use Hybrid\Support\Contracts\Bootable;
+use Hybrid\Contracts\Bootable;
 
 /**
  * Template manager class.
  *
- * @since  5.0.0
+ * @since  1.0.0
  * @access public
  */
 class Manager implements Bootable {
@@ -27,7 +27,7 @@ class Manager implements Bootable {
 	/**
 	 * Templates collection.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    Templates
 	 */
@@ -36,7 +36,7 @@ class Manager implements Bootable {
 	/**
 	 * Sets the initial templates collection.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  Templates  $templates
 	 * @return void
@@ -49,7 +49,7 @@ class Manager implements Bootable {
 	/**
 	 * Sets up the templates manager actions and filters.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -69,7 +69,7 @@ class Manager implements Bootable {
 	 * Note that this method is `public` because of WP's hook callback
 	 * system. See the implemented contract for publicly-available methods.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -85,7 +85,7 @@ class Manager implements Bootable {
 	 * Note that this method is `public` because of WP's hook callback
 	 * system. See the implemented contract for publicly-available methods.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  array   $templates
 	 * @param  object  $theme

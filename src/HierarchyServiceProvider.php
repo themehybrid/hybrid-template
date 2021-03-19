@@ -7,7 +7,7 @@
  *
  * @package   HybridCore
  * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright Copyright (c) 2008 - 2019, Justin Tadlock
+ * @copyright Copyright (c) 2008 - 2021, Justin Tadlock
  * @link      https://themehybrid.com/hybrid-core
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
@@ -15,12 +15,12 @@
 namespace Hybrid\Template;
 
 use Hybrid\Template\Contracts\Hierarchy as TemplateHierarchy;
-use Hybrid\Support\Tools\ServiceProvider;
+use Hybrid\Tools\ServiceProvider;
 
 /**
  * Template hierarchy provider class.
  *
- * @since  5.0.0
+ * @since  1.0.0
  * @access public
  */
 class HierarchyServiceProvider extends ServiceProvider {
@@ -29,7 +29,7 @@ class HierarchyServiceProvider extends ServiceProvider {
 	 * Registration callback that adds a single instance of the template
 	 * hierarchy to the container.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -43,7 +43,7 @@ class HierarchyServiceProvider extends ServiceProvider {
 	/**
 	 * Boots the hierarchy by firing its hooks in the `boot()` method.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
