@@ -15,7 +15,7 @@
 
 namespace Hybrid\Template;
 
-use Hybrid\Support\Tools\Collection;
+use Hybrid\Tools\Collection;
 
 /**
  * Template collection class.

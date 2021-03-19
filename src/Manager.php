@@ -14,7 +14,7 @@
 
 namespace Hybrid\Template;
 
-use Hybrid\Support\Contracts\Bootable;
+use Hybrid\Contracts\Bootable;
 
 /**
  * Template manager class.

@@ -14,7 +14,7 @@
 
 namespace Hybrid\Template;
 
-use Hybrid\Support\Tools\ServiceProvider;
+use Hybrid\Tools\ServiceProvider;
 
 /**
  * Object templates provider class.
