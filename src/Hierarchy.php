@@ -10,7 +10,7 @@
  *
  * @package   HybridCore
  * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright Copyright (c) 2008 - 2019, Justin Tadlock
+ * @copyright Copyright (c) 2008 - 2021, Justin Tadlock
  * @link      https://themehybrid.com/hybrid-core
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
@@ -23,7 +23,7 @@ use Hybrid\Template\Contracts\Hierarchy as TemplateHierarchy;
 /**
  * Overwrites the core WP template hierarchy.
  *
- * @since  5.0.0
+ * @since  1.0.0
  * @access public
  */
 class Hierarchy implements TemplateHierarchy {
@@ -32,7 +32,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * Array of template types in core WP.
 	 *
 	 * @link   https://developer.wordpress.org/reference/hooks/type_template_hierarchy/
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    array
 	 */
@@ -60,7 +60,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * Copy of the located template found when running through the
 	 * template hierarchy.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    string
 	 */
@@ -70,7 +70,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * An array of the entire template hierarchy for the current page view.
 	 * This hierarchy does not have the `.php` file name extension.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    array
 	 */
@@ -79,7 +79,7 @@ class Hierarchy implements TemplateHierarchy {
 	/**
 	 * Sets up template hierarchy filters.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -121,7 +121,7 @@ class Hierarchy implements TemplateHierarchy {
 	/**
 	 * Returns the full template hierarchy for the current page load.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return array
 	 */
@@ -144,7 +144,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * via the standard page template.  User choice should always trump
 	 * developer choice.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  array   $templates
 	 * @return array
@@ -172,7 +172,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * Overrides the default single (singular post) template for all post
 	 * types, including pages and attachments.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  array   $templates
 	 * @return array
@@ -240,7 +240,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * allows better organization of taxonomy template files by making
 	 * categories and post tags work the same way as other taxonomies.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  array   $templates
 	 * @return array
@@ -276,7 +276,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * abstraction of templates than `is_author()` allows by allowing themes
 	 * to specify templates for a specific author.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  array   $templates
 	 * @return array
@@ -315,7 +315,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * abstraction of templates than `is_date()` allows by checking for the
 	 * year, month, week, day, hour, and minute.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  array   $templates
 	 * @return array
@@ -371,7 +371,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * Filters a queried template hierarchy for each type of template and
 	 * looks templates within `resources/views`.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return array
 	 */
@@ -414,7 +414,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * that the template hierarchy continues processing. That way, we can
 	 * capture the entire hierarchy.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  string  $template
 	 * @return string
@@ -432,7 +432,7 @@ class Hierarchy implements TemplateHierarchy {
 	 * Filter on `template_include` to make sure we fall back to our
 	 * located template from earlier.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @param  string  $template
 	 * @return string

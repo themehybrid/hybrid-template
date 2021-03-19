@@ -6,7 +6,7 @@
  *
  * @package   HybridCore
  * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright Copyright (c) 2008 - 2019, Justin Tadlock
+ * @copyright Copyright (c) 2008 - 2021, Justin Tadlock
  * @link      https://themehybrid.com/hybrid-core
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
@@ -20,7 +20,7 @@ use Hybrid\Proxies\App;
  * Returns the global hierarchy. This is a wrapper around the values stored via
  * the template hierarchy object.
  *
- * @since  5.0.0
+ * @since  1.0.0
  * @access public
  * @return array
  */
@@ -37,7 +37,7 @@ function hierarchy() {
  * this function merely locates templates and does no loading. Use the core
  * `load_template()` function for actually loading the template.
  *
- * @since  5.0.0
+ * @since  1.0.0
  * @access public
  * @param  array|string  $templates
  * @return string
@@ -64,7 +64,7 @@ function locate( $templates ) {
 /**
  * Returns the relative path to where templates are held in the theme.
  *
- * @since  5.0.0
+ * @since  1.0.0
  * @access public
  * @param  string  $file
  * @return string
@@ -84,7 +84,7 @@ function path( $file = '' ) {
  * issue that hasn't been addressed since 2010.
  *
  * @link   https://core.trac.wordpress.org/ticket/13239
- * @since  5.0.0
+ * @since  1.0.0
  * @access public
  * @return array
  */
@@ -106,7 +106,7 @@ function locations() {
 /**
  * Filters an array of templates and prefixes them with the view path.
  *
- * @since  5.0.0
+ * @since  1.0.0
  * @access public
  * @param  array  $templates
  * @return array

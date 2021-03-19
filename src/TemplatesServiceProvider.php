@@ -7,7 +7,7 @@
  *
  * @package   HybridCore
  * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright Copyright (c) 2008 - 2019, Justin Tadlock
+ * @copyright Copyright (c) 2008 - 2021, Justin Tadlock
  * @link      https://themehybrid.com/hybrid-core
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
@@ -19,7 +19,7 @@ use Hybrid\Support\Tools\ServiceProvider;
 /**
  * Object templates provider class.
  *
- * @since  5.0.0
+ * @since  1.0.0
  * @access public
  */
 class TemplatesServiceProvider extends ServiceProvider {
@@ -27,7 +27,7 @@ class TemplatesServiceProvider extends ServiceProvider {
 	/**
 	 * Registers the templates collection and manager.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -41,7 +41,7 @@ class TemplatesServiceProvider extends ServiceProvider {
 	/**
 	 * Boots the manager by firing its hooks in the `boot()` method.
 	 *
-	 * @since  5.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
