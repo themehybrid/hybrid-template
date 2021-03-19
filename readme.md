@@ -32,14 +32,14 @@ composer require themehybrid/hybrid-template
 You need to register the service provider during your bootstrapping process.  In your bootstrapping code, you should have something like the following:
 
 ```php
-$theme = new \Hybrid\Core\Application();
+$themeslug = new \Hybrid\Core\Application();
 ```
 
 After that point, you can register the service provider:
 
 ```php
-$theme->provider( \Hybrid\Template\TemplatesServiceProvider::class );
-$theme->provider( \Hybrid\Template\HierarchyServiceProvider::class );
+$themeslug->provider( \Hybrid\Template\TemplatesServiceProvider::class );
+$themeslug->provider( \Hybrid\Template\HierarchyServiceProvider::class );
 ```
 
 ## Copyright and License
