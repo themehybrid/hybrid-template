@@ -21,7 +21,7 @@
 			"Hybrid\\Template\\" : "src/"
 		},
 		"files" : [
-			"src/bootstrap-template.php"
+			"src/functions-template.php"
 		]
 	},
 	"require"     : {
