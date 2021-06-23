@@ -1,8 +1,8 @@
 <?php
 /**
- * Template manager.
+ * Template component class.
  *
- * This class is used to boot the templates manager and handle its action and
+ * This class is used to boot the template component and handle its action and
  * filter hooks.
  *
  * @package   HybridCore
@@ -17,12 +17,12 @@ namespace Hybrid\Template;
 use Hybrid\Contracts\Bootable;
 
 /**
- * Template manager class.
+ * Template component class.
  *
  * @since  1.0.0
  * @access public
  */
-class Manager implements Bootable {
+class Component implements Bootable {
 
 	/**
 	 * Templates collection.

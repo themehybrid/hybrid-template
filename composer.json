@@ -1,6 +1,6 @@
 {
 	"name"        : "themehybrid/hybrid-template",
-	"description" : "Template management system, an add-on for the Hybrid Core framework.",
+	"description" : "Custom template registration system for WordPress.",
 	"keywords"    : [ "wordpress" ],
 	"homepage"    : "https://github.com/themehybrid/hybrid-template",
 	"license"     : "GPL-2.0-or-later",
@@ -19,10 +19,7 @@
 	"autoload"    : {
 		"psr-4" : {
 			"Hybrid\\Template\\" : "src/"
-		},
-		"files" : [
-			"src/functions-template.php"
-		]
+		}
 	},
 	"require"     : {
 		"php"                          : ">=5.6",

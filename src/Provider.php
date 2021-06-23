@@ -22,7 +22,7 @@ use Hybrid\Tools\ServiceProvider;
  * @since  1.0.0
  * @access public
  */
-class TemplatesServiceProvider extends ServiceProvider {
+class Provider extends ServiceProvider {
 
 	/**
 	 * Registers the templates collection and manager.
@@ -32,10 +32,7 @@ class TemplatesServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-
-		$this->app->singleton( Manager::class );
-
-		$this->app->alias( Manager::class, 'template/manager' );
+		$this->app->singleton( Component::class );
 	}
 
 	/**
@@ -46,7 +43,6 @@ class TemplatesServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot() {
-
-		$this->app->resolve( 'template/manager' )->boot();
+		$this->app->resolve( Component::class )->boot();
 	}
 }
