@@ -19,11 +19,15 @@
 	"autoload"    : {
 		"psr-4" : {
 			"Hybrid\\Template\\" : "src/"
-		}
+		},
+		"files" : [
+			"src/functions-helpers.php"
+		]
 	},
 	"require"     : {
 		"php"                          : ">=5.6",
 		"themehybrid/hybrid-contracts" : "dev-master",
+		"themehybrid/hybrid-template"  : "dev-master"
 		"themehybrid/hybrid-tools"     : "dev-master"
 	}
 }
