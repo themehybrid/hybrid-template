@@ -1,6 +1,6 @@
 {
 	"name"        : "themehybrid/hybrid-template",
-	"description" : "Custom template registration system for WordPress.",
+	"description" : "Template helper functions.",
 	"keywords"    : [ "wordpress" ],
 	"homepage"    : "https://github.com/themehybrid/hybrid-template",
 	"license"     : "GPL-2.0-or-later",
