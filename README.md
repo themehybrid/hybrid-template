@@ -5,7 +5,7 @@ Hybrid Template is a set of helper functions for setting the location, locating,
 ## Requirements
 
 * WordPress 4.9+.
-* PHP 5.6+ (preferably 7+).
+* PHP 7.4+ (preferably 8+).
 * [Composer](https://getcomposer.org/) for managing PHP dependencies.
 
 ## Copyright and License
