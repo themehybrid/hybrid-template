@@ -20,10 +20,8 @@ if ( ! function_exists( __NAMESPACE__ . '\\locate' ) ) {
      * this function merely locates templates and does no loading. Use the core
      * `load_template()` function for actually loading the template.
      *
-     * @param  array|string $templates
+     * @param array|string $templates
      * @return string
-     *
-     * @access public
      */
     function locate( $templates ) {
         $located = '';
@@ -49,10 +47,8 @@ if ( ! function_exists( __NAMESPACE__ . '\\path' ) ) {
     /**
      * Returns the relative path to where templates are held in the theme.
      *
-     * @param  string $file
+     * @param string $file
      * @return string
-     *
-     * @access public
      */
     function path( $file = '' ) {
 
@@ -72,8 +68,6 @@ if ( ! function_exists( __NAMESPACE__ . '\\locations' ) ) {
      *
      * @link   https://core.trac.wordpress.org/ticket/13239
      * @return array
-     *
-     * @access public
      */
     function locations() {
 
@@ -95,17 +89,15 @@ if ( ! function_exists( __NAMESPACE__ . '\\filter_templates' ) ) {
     /**
      * Filters an array of templates and prefixes them with the view path.
      *
-     * @param  array $templates
+     * @param array $templates
      * @return array
-     *
-     * @access public
      */
     function filter_templates( $templates ) {
 
         $path = path();
 
         if ( $path ) {
-            array_walk( $templates, static function( &$template, $key ) use ( $path ) {
+            array_walk( $templates, static function ( &$template, $key ) use ( $path ) {
 
                 $template = ltrim( str_replace( $path, '', $template ), '/' );
 
