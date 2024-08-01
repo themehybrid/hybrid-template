@@ -8,7 +8,7 @@
  * @link      https://github.com/themehybrid/hybrid-template
  *
  * @author    Theme Hybrid
- * @copyright Copyright (c) 2008 - 2023, Theme Hybrid
+ * @copyright Copyright (c) 2008 - 2024, Theme Hybrid
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
@@ -20,7 +20,6 @@ if ( ! function_exists( __NAMESPACE__ . '\\locate' ) ) {
      * this function merely locates templates and does no loading. Use the core
      * `load_template()` function for actually loading the template.
      *
-     * @since  1.0.0
      * @param  array|string $templates
      * @return string
      *
@@ -50,7 +49,6 @@ if ( ! function_exists( __NAMESPACE__ . '\\path' ) ) {
     /**
      * Returns the relative path to where templates are held in the theme.
      *
-     * @since  1.0.0
      * @param  string $file
      * @return string
      *
@@ -72,7 +70,6 @@ if ( ! function_exists( __NAMESPACE__ . '\\locations' ) ) {
      * Note that this won't work with the core WP template hierarchy due to an
      * issue that hasn't been addressed since 2010.
      *
-     * @since  1.0.0
      * @link   https://core.trac.wordpress.org/ticket/13239
      * @return array
      *
@@ -98,7 +95,6 @@ if ( ! function_exists( __NAMESPACE__ . '\\filter_templates' ) ) {
     /**
      * Filters an array of templates and prefixes them with the view path.
      *
-     * @since  1.0.0
      * @param  array $templates
      * @return array
      *
